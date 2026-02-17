@@ -1,0 +1,24 @@
+## .NET / C# Core
+bin/
+obj/
+/out/
+.vscode/
+.idea/
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Database
+# We ignore the .db file so you don't overwrite your production data 
+# with your local test data during a push.
+*.db
+*.db-shm
+*.db-wal
+.dockerignore
+## Environment & Secrets
+.env
+appsettings.Development.json
