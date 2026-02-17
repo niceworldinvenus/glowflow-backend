@@ -1,0 +1,16 @@
+@glowflow.backend_HostAddress = http://localhost:5046
+
+GET {{glowflow.backend_HostAddress}}/
+Accept: application/json
+
+###
+
+GET {{glowflow.backend_HostAddress}}/makeup/face-primer
+Accept: application/json
+
+###
+
+GET {{glowflow.backend_HostAddress}}/makeup/face-primer/face-primer-002
+Accept: application/json
+
+###
