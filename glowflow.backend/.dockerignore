@@ -1,0 +1,37 @@
+# 1. Build Artifacts
+# These are local binaries. We want Docker to build its own.
+**/bin/
+**/obj/
+/out/
+
+# 2. Version Control
+# Huge folders that aren't needed to run the app.
+.git/
+.gitignore
+
+# 3. IDE & System Files
+# Local settings from VS Code or Visual Studio
+.vscode/
+.vs/
+.idea/
+*.user
+*.suo
+*.userprefs
+.DS_Store
+
+# 4. Docker Files
+# No need for the recipe to be inside the cake.
+Dockerfile
+.dockerignore
+docker-compose*
+
+# 5. Local Secrets & Logs
+# Keep your local secrets out of the image!
+.env
+appsettings.Development.json
+*.log
+
+# 6. Database (Optional Decision)
+# If you COPY your .db in the Dockerfile, DON'T ignore it here.
+# If you are using a Volume, keep it ignored.
+# makeup.db
